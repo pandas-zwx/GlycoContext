@@ -1,0 +1,48 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.env
+*.egg-info/
+build/
+dist/
+features*/
+weights/
+runs/
+third_party/
+data/raw/
+data/*.jsonl.gz
+data/*.fasta
+data/provenance/
+*.pth
+*.pt
+*.joblib
+*.pkl
+*.npy
+*.npz
+*.bw
+*.tar
+*.zip
+
+# Manuscript, figures, tables, and publication analysis are maintained privately.
+manuscript/
+
+# Local scheduler and editor state
+*.out
+*.err
+.idea/
+.vscode/
+external/
+
+# Project-local orchestration and non-reported analysis
+configs/bootstrap_final.json
+scripts/bootstrap_final_groups.py
+scripts/finish_incremental_final.sh
+manuscript/tables/build_supplementary_workbook.mjs
+
+# One development-selected deployment state and its audit metadata are released.
+!weights/
+weights/*
+!weights/README.md
+!weights/manifest.json
+!weights/GlycoContext_dev_selected_seed4.pt

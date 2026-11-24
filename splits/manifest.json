@@ -1,0 +1,11 @@
+{
+  "schema": "GlycoContext-splits-v1",
+  "sha256": {
+    "dev0.json": "217105f4c0d586c22a717f44a00c7d32c1ba489bedc4e0a47e19335bac406d92",
+    "dev1.json": "43ffdb935022cdec3cedbde3ea8050a8b2e624f0d8655171c3ae33f6988af05e",
+    "dev2.json": "7c93250dda40049e885c6b4c352b8c73f5c852e012bcea025d41874f293702ee",
+    "final.json": "bce48f68ce8d7238f0827c79365dd39a79c79656e1d9231e1ac8d168e79915c7"
+  },
+  "selection": "Original fixed group membership and partitions, no new random reassignment.",
+  "grouping": "Global normalized edit similarity>=0.8; shared valid source/gene IDs; retained protection components; verified same-strand exon overlap; identical51nt/mask candidate windows; connected components."
+}

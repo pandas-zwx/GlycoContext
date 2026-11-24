@@ -1,0 +1,27 @@
+{
+  "threads": 2,
+  "RF": {
+    "n_estimators": 200,
+    "max_features": "sqrt",
+    "min_samples_leaf": [1, 5],
+    "inner_folds": 5,
+    "inner_seed": 0,
+    "class_weight": null,
+    "features": ["PSDSP", "onehot", "KNF"]
+  },
+  "LightGBM": {
+    "version": "4.6.0",
+    "preprocessing": ["raw", "token_LN"],
+    "num_leaves": [7, 15, 31],
+    "max_rounds": 800,
+    "early_stopping_rounds": 40,
+    "feature_dimension": 2564,
+    "params": {
+      "objective": "binary", "metric": "None", "device_type": "cpu",
+      "num_threads": 2, "deterministic": true, "force_col_wise": true,
+      "learning_rate": 0.03, "min_data_in_leaf": 50, "lambda_l2": 10,
+      "max_bin": 63, "feature_fraction": 0.8, "bagging_fraction": 1,
+      "bagging_freq": 0, "verbosity": -1
+    }
+  }
+}

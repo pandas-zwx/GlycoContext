@@ -1,0 +1,14 @@
+{
+  "schema": "GlycoContext-baseline-features-v1",
+  "RNAFM_checkpoint_sha256": "5b5d7d87b37c291ef42c140ef9edf7aea29f255fa2a4fd435f776c52e93d5e99",
+  "layer": 12,
+  "dimension": 640,
+  "native_batch": 1,
+  "precision": "FP32",
+  "pooling": "Mean over nucleotide tokens only; float64 accumulation, float32 storage",
+  "data_manifest_sha256": "75378d02439513510c0aec216e3b66d7bfe27a216716a21192d9e8d71ec8dd1c",
+  "sha256": {
+    "sequence_keys.json": "86a1bb1fd778398f028b9d50448e34566fb160be642efc2c9f6ad8859b00f105",
+    "rnafm_native_mean.npy": "f8728d8e0459fd3b5af3d2199d9cbea4da076eaa56d8d67e1be85eec7aa00adf"
+  }
+}

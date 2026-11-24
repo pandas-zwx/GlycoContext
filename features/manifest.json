@@ -1,0 +1,30 @@
+{
+  "schema": "GlycoContext-features-v1",
+  "records": 11479,
+  "RNAs": 499,
+  "RNAFM_dimension": 640,
+  "RNAFM_views": [
+    "native",
+    "crop51",
+    "crop101"
+  ],
+  "provenance": {
+    "RNAFM_checkpoint_sha256": "5b5d7d87b37c291ef42c140ef9edf7aea29f255fa2a4fd435f776c52e93d5e99",
+    "RNAFM_layer": 12,
+    "precision": "FP32",
+    "native_batch": 1,
+    "crop_batch": 16,
+    "source_RNAFM_view_array_sha256": [
+      "5c0ceff9fe0eb1cb2e95a05cc7168891d47cb6d6ddcdcfe9f28a81e422c3f9cd",
+      "16a179311497b4eb4c6ddd5289c740b7d498c8704fd97f8306785715be9c368c"
+    ],
+    "ViennaRNA": "2.7.2",
+    "temperature_C": 37
+  },
+  "sha256": {
+    "cnn.npy": "40216957e884e1aee8b2d77bb63a9883cb18e6c479f1cac868518790a838d1e9",
+    "rnafm_views.npy": "0b89d5df4e93cf3e5fcd6d82c879a616bc8a65f905e0662b096449aedadc7dbb",
+    "graphs.npz": "18bfdf1a89c038ebb6f1c49b6e8a1e00f823e919bb71175388a221c1f1d6af59",
+    "candidate_ids.json": "dc99009ae30575b6346b7fde6de5f7424f81a659cfdd30f2c60476a70446c798"
+  }
+}

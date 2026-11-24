@@ -1,0 +1,19 @@
+{
+  "arms": {
+    "full": "CNN + two-layer GNN with base-pair-probability-weighted pairing messages + three-context frozen RNA-FM + cell readout",
+    "no_cnn": "Zero local CNN feature score; retain its cell intercept",
+    "no_gnn": "Zero the GNN score; retain CNN structure channels and RNA-FM",
+    "no_rnafm": "Zero the RNA-FM score and its cell-conditioned correction",
+    "no_rnafold": "Zero CNN pairing channels and all graph pair messages; retain backbone GNN and RNA-FM",
+    "no_cell": "Use one common CNN intercept and no RNA-FM cell interaction",
+    "no_cnn_structure": "Zero only the two RNAfold-derived CNN channels; retain GNN pair messages",
+    "no_gnn_pair": "Zero only RNAfold-derived GNN pair messages; retain CNN structure channels and backbone GNN"
+  },
+  "refit_each_arm": true,
+  "same_split_seeds_and_training_budget": true,
+  "thresholds": "Recompute on that arm/refit's own C predictions only",
+  "initialization": "All arms have identical state inventory and initialization at a given seed",
+  "capacity_caveat": "Compute-then-zero removal is not a matched active-capacity control",
+  "structure_caveat": "no_rnafold removes all explicit RNAfold inputs; no_cnn_structure and no_gnn_pair isolate its CNN-channel and GNN-pair paths. Frozen RNA-FM may retain implicit structural information.",
+  "intended_scope": "Runnable experimental definitions; no empirical outcome is asserted"
+}

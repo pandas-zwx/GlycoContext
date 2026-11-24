@@ -1,0 +1,40 @@
+{
+  "schema": "GlycoContext-deployment-checkpoint-v1",
+  "checkpoint": {
+    "file": "GlycoContext_dev_selected_seed4.pt",
+    "bytes": 235433,
+    "sha256": "c52191c90c57e1857980678d5be0c2c98998d7748c3f71edb544564640ddb527",
+    "ablation": "full",
+    "seed": 4,
+    "refit_epochs": 5,
+    "cells": [
+      "HeLa",
+      "H9"
+    ],
+    "thresholds": {
+      "HeLa": 0.56,
+      "H9": 0.54
+    }
+  },
+  "selection": {
+    "criterion": "maximum selector S equal-cell macro AUROC across prespecified seeds 0-4; lower seed breaks exact ties",
+    "selected_seed": 4,
+    "selector_S_macro_AUROC": 0.8237882477694141,
+    "selector_selected_epoch": 5,
+    "refit": "fresh initialization trained on E+S for the selected epoch count",
+    "thresholds": "per-cell MCC thresholds selected on C",
+    "final_test_used": false,
+    "candidate_summaries": [
+      {"seed": 0, "selected_epoch": 3, "S_macro_AUROC": 0.8182746597675767},
+      {"seed": 1, "selected_epoch": 4, "S_macro_AUROC": 0.8213374185376081},
+      {"seed": 2, "selected_epoch": 6, "S_macro_AUROC": 0.8211143187300132},
+      {"seed": 3, "selected_epoch": 3, "S_macro_AUROC": 0.8225201377055413},
+      {"seed": 4, "selected_epoch": 5, "S_macro_AUROC": 0.8237882477694141}
+    ]
+  },
+  "external_RNAFM": {
+    "included": false,
+    "revision": "43aa1f5f069e636e275159861fc35ce44b552d7a",
+    "sha256": "5b5d7d87b37c291ef42c140ef9edf7aea29f255fa2a4fd435f776c52e93d5e99"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "GlycoContext-data-v1",
+  "candidate_count": 11479,
+  "unique_RNAs": 499,
+  "positive": 4349,
+  "negative": 7130,
+  "counts_by_cell": {
+    "HeLa": {
+      "positive": 1910,
+      "negative": 3025
+    },
+    "H9": {
+      "positive": 2439,
+      "negative": 4105
+    }
+  },
+  "chemical_ground_truth": false,
+  "sha256": {
+    "provenance/exclusions.json": "beb8ae8cfe5a0e5d835615e97c3b17e6fd9cbdcfe740099013f5e9aaa08194a1",
+    "provenance/reference_paths.json": "eff01eadde21790b49966d1daff457278392fdb9f083c9503fcec67d5769dc79",
+    "provenance/source_observations.jsonl.gz": "a9ec1602d75088bb4187d7a93279cd0bb752c6b371d9670b1df7ed568f060564",
+    "provenance/sources.json": "33f04f6ed296240504478d7acf37e479093e1fa3ebaa0f61b89948f86324b425",
+    "sequences.fasta": "dfb487a472afc3945df5f7673f1259270d6a614d4a4b8289e1f2357d54489a83",
+    "sequences.jsonl.gz": "47eea09f8708ee0c61fc03606b18bfdbd7cd3f349b3cbc620938df2fa19f3d35",
+    "sites.jsonl.gz": "b8c81ef5b824ebc4a174753d18af533443f2d85b09e97993eb5cae671d3c3eb8"
+  }
+}

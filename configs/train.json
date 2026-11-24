@@ -1,0 +1,17 @@
+{
+  "seeds": [0, 1, 2, 3, 4],
+  "max_epochs": 20,
+  "batch_sites": 128,
+  "prediction_batch": 64,
+  "optimizer": {"lr": 0.001, "weight_decay": 0.0001},
+  "gradient_clip": 5.0,
+  "selection_metric": "earliest maximum S equal-cell AUROC",
+  "threshold": "C-only per-cell MCC; grid0.01:0.01:0.99; tie nearest0.5, then lower",
+  "loss": "per-cell positive-weighted BCE, positive weight=n_negative/n_positive in actual fitting partition",
+  "epoch_schedule": "independent per-cell fitting permutations and shuffled batch events from numpy.default_rng(seed)",
+  "RNAFM": {"frozen": true, "layer": 12, "dimensions": 640, "views": ["native", "crop51", "crop101"]},
+  "architecture": "GlycoContext-0.1",
+  "background_branch": false,
+  "length_calibration": false,
+  "probability_calibration": false
+}

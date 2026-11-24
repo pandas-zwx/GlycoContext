@@ -1,0 +1,27 @@
+{
+  "analysis": "fixed-order incremental component analysis",
+  "path": [
+    "inc_cnn_seq",
+    "inc_cnn_structure",
+    "inc_rnafm",
+    "inc_gnn_backbone",
+    "no_cell",
+    "full"
+  ],
+  "new_training_arms": [
+    "inc_cnn_seq",
+    "inc_cnn_structure",
+    "inc_rnafm",
+    "inc_gnn_backbone"
+  ],
+  "reused_existing_arms": ["no_cell", "full"],
+  "development_partitions": ["dev0", "dev1", "dev2"],
+  "final_evaluation_partition": "final",
+  "seeds": [0, 1, 2, 3, 4],
+  "refit_each_new_arm": true,
+  "same_split_seeds_and_training_budget": true,
+  "thresholds": "Recompute on each arm/refit's own C predictions only",
+  "final_allowed_after_path_freeze": true,
+  "final_test_use": "One-time evaluation only. Epoch selection remains S-only and thresholds remain C-only; do not revise the path after inspecting final-test results.",
+  "interpretation": "Adjacent differences are conditional marginal contributions under this prespecified order, not order-independent or Shapley contributions."
+}

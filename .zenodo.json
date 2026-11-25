@@ -1,0 +1,30 @@
+{
+  "title": "GlycoContext: integrating RNA sequence, secondary structure and language-model representations for cell-context-aware glycosylation site prediction",
+  "upload_type": "software",
+  "description": "Source code for GlycoContext, a cell-context-aware classifier of candidate glycoRNA-associated sites that integrates a local convolutional neural network, a two-layer graph neural network with base-pair-probability-weighted pairing messages, and frozen RNA-FM representations. The repository includes fixed configurations, baseline, ablation and incremental-component workflows, sequence-wide inference utilities, and one development-selected deployment checkpoint.",
+  "creators": [
+    {
+      "name": "Zhao, Wenxuan",
+      "affiliation": "Fudan University"
+    }
+  ],
+  "version": "1.0.0",
+  "license": "mit",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "glycoRNA",
+    "RNA glycosylation",
+    "RNA secondary structure",
+    "RNA-FM",
+    "graph neural network",
+    "site prediction"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.24414432",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset"
+    }
+  ]
+}

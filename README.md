@@ -36,6 +36,11 @@ The processed candidate-site dataset, fixed split definitions, provenance record
 and released deployment checkpoint are archived at Zenodo:
 [https://doi.org/10.5281/zenodo.24414432](https://doi.org/10.5281/zenodo.24414432).
 
+The submitted software release is archived separately at Zenodo:
+[GlycoContext v1.0.0](https://doi.org/10.5281/zenodo.24526587).
+The version-independent concept DOI for all archived software releases is
+[https://doi.org/10.5281/zenodo.24526586](https://doi.org/10.5281/zenodo.24526586).
+
 ## Installation
 
 The reference environment uses Python 3.10, PyTorch 2.6.0 with CUDA 12.4, NumPy 1.26.4, and scikit-learn 1.7.2. On IMI, the existing `diffusion_gpu` environment can run `python scripts/...` directly without modification. In a new environment, first install the PyTorch 2.6 build appropriate for the target GPU, then install this project:
